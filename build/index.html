@@ -1,11 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oxanium|Righteous|Source+Code+Pro& display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
-    <h1>sup</h1>
+    <img src="img/background.png" id="background_image">
+    <header>
+        <div class="intro">
+            <img src="img/logo.png" alt="Logo">
+            <div class="Headlines">
+                <a href="">НОВОСТИ</a>
+                <a href="">ТРЕЙЛЕРЫ</a>
+                <a href="">СТАТЬИ</a>
+                <a href="">РЕЦЕНЗИИ</a>
+                <a href="">ФИЛЬМЫ</a>
+            </div>
+            <!-- <div class="icons">
+                <input type="image" src="img/Icons/facebook-icon.png" alt="Facebook">
+                <input type="image" src="img/Icons/twitter-icon.png" alt="Twitter">
+                <input type="image" src="img/Icons/vk-icon.png" alt="VK">
+                <input type="image" src="img/Icons/instagram-icon.png" alt="Instagram">
+            </div> -->
+            <div class="search">
+                <div class="form__group">
+                    <input type="input" class="form__field" placeholder=" " name="search" id='search' required />
+                    <label for="search" class="form__label">Поиск</label>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="slider">
+        <img src="img/Slides/Bronson1.jpg" alt="" class="slide">
+        <img src="img/Slides/Joker3.jpeg" alt="" class="slide">
+        <img src="img/Slides/Lock-Stock2.jpg" alt="" class="slide">
+
+        <div class="buttons">
+            <div id="left" onclick="minusSlide()">
+                <p>&#10094;</p>
+            </div>
+            <div id="right" onclick="plusSlide()">
+                <p>&#10095;</p>
+            </div>
+        </div>
+
+        <div class="dots">
+            <span class="dots_item" onclick="currentSlide(1)"></span>
+            <span class="dots_item" onclick="currentSlide(2)"></span>
+            <span class="dots_item" onclick="currentSlide(3)"></span>
+        </div>
+
+    </div>
+    <script src="scripts/slider.js"></script>
 </body>
+
 </html>
