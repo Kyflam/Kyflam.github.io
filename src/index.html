@@ -12,190 +12,209 @@
 
 <body>
     <img src="img/background.png" id="background_image">
-    <header>
-        <div class="intro">
-            <img src="img/logo.png" alt="Logo">
-            <div class="Headlines">
-                <a href="">НОВОСТИ</a>
-                <a href="">ТРЕЙЛЕРЫ</a>
-                <a href="">СТАТЬИ</a>
-                <a href="">РЕЦЕНЗИИ</a>
-                <a href="">ФИЛЬМЫ</a>
-            </div>
-            <!-- <div class="icons">
-                <input type="image" src="img/Icons/facebook-icon.png" alt="Facebook">
-                <input type="image" src="img/Icons/twitter-icon.png" alt="Twitter">
-                <input type="image" src="img/Icons/vk-icon.png" alt="VK">
-                <input type="image" src="img/Icons/instagram-icon.png" alt="Instagram">
-            </div> -->
-            <div class="search">
-                <div class="form__group">
-                    <input type="input" class="form__field" placeholder=" " name="search" id='search' required />
-                    <label for="search" class="form__label">Поиск</label>
+    <div id="foreground">
+        <header>
+            <div class="intro">
+                <img src="img/logo.png" alt="Logo">
+                <div class="Headlines">
+                    <a href="">НОВОСТИ</a>
+                    <a href="">ТРЕЙЛЕРЫ</a>
+                    <a href="">СТАТЬИ</a>
+                    <a href="">РЕЦЕНЗИИ</a>
+                    <a href="">ФИЛЬМЫ</a>
+                </div>
+
+                <div class="search">
+                    <div class="form__group">
+                        <input type="input" class="form__field" placeholder=" " name="search" id='search' required />
+                        <label for="search" class="form__label">Поиск</label>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <div class="slider">
-        <img src="img/Slides/Bronson1.jpg" alt="" class="slide">
-        <img src="img/Slides/Joker3.jpeg" alt="" class="slide">
-        <img src="img/Slides/Lock-Stock2.jpg" alt="" class="slide">
+        </header>
+        <div class="slider">
+            <img src="img/Slides/Bronson1.jpg" alt="" class="slide">
+            <img src="img/Slides/Joker3.jpeg" alt="" class="slide">
+            <img src="img/Slides/Lock-Stock2.jpg" alt="" class="slide">
 
-        <div class="buttons">
-            <div id="left" onclick="minusSlide()">
-                <p>&#10094;</p>
+            <div class="buttons">
+                <div id="left" onclick="minusSlide()">
+                    <p>&#10094;</p>
+                </div>
+                <div id="right" onclick="plusSlide()">
+                    <p>&#10095;</p>
+                </div>
             </div>
-            <div id="right" onclick="plusSlide()">
-                <p>&#10095;</p>
+
+            <div class="dots">
+                <span class="dots_item" onclick="currentSlide(1)"></span>
+                <span class="dots_item" onclick="currentSlide(2)"></span>
+                <span class="dots_item" onclick="currentSlide(3)"></span>
             </div>
         </div>
 
-        <div class="dots">
-            <span class="dots_item" onclick="currentSlide(1)"></span>
-            <span class="dots_item" onclick="currentSlide(2)"></span>
-            <span class="dots_item" onclick="currentSlide(3)"></span>
-        </div>
+        <main>
+            <div id="title">
+                <p>Новости кино</p>
+            </div>
+            <div class="news">
+                <div class="news-item">
+                    <div class="info">
+                        <div class="text">
+                            <h2>Том Харди рассматривается на роль Франкенштейна</h2>
+                            <p>Вдохновившись успехом «Человека-невидимки», студия Universal вновь заговорила о так называемой «Темной вселенной», концепции возвращения на экраны таких классических монстров, как Дракула, Мумия, Чудовище Франкенштейна и Невеста
+                                Франкенштейна.
+                            </p>
+                        </div>
+                        <div class="action">
+                            <div class="discussion">
+                                <div id="comments"><img src="img/Discussion/comments.png" alt="comments">
+                                    <p>13</p>
+                                </div>
+                                <div id="likes"><img src="img/Discussion/likes.png" alt="likes">
+                                    <p>37</p>
+                                </div>
+                            </div>
+                            <div class="open"><a href="">Читать полностью</a></div>
+                        </div>
+                    </div>
+                    <div id="pic">
+                        <img src="img/news photos/image (4).png" alt="">
+                    </div>
+                </div>
+
+                <div class="news-item">
+                    <div class="info">
+                        <div class="text">
+                            <h2>Бен Стиллер присоединился к франшизе «Форсаж»</h2>
+                            <p>Вот так неожиданная новость. Комик Бен Стиллер, если верить изданию Page Six, присоединился к команде Вина Дизеля, причем предстанет перед зрителями уже в девятом «Форсаже», до релиза которого осталось менее трех месяцев.
+                            </p>
+                        </div>
+                        <div class="action">
+                            <div class="discussion">
+                                <div id="comments"><img src="img/Discussion/comments.png" alt="comments">
+                                    <p>13</p>
+                                </div>
+                                <div id="likes"><img src="img/Discussion/likes.png" alt="likes">
+                                    <p>37</p>
+                                </div>
+                            </div>
+                            <div class="open"><a href="">Читать полностью</a></div>
+                        </div>
+                    </div>
+                    <div id="pic">
+                        <img src="img/news photos/image (5).png" alt="">
+                    </div>
+                </div>
+
+                <div class="news-item">
+                    <div class="info">
+                        <div class="text">
+                            <h2>Disney не заработает ожидаемых денег на прокате «Мулан»</h2>
+                            <p>Стало известно, что предстоящий игровой ремейк диснеевского мультфильма «Мулан» не выйдет в китайский прокат, передает Comic Book.
+                            </p>
+                        </div>
+                        <div class="action">
+                            <div class="discussion">
+                                <div id="comments"><img src="img/Discussion/comments.png" alt="comments">
+                                    <p>13</p>
+                                </div>
+                                <div id="likes"><img src="img/Discussion/likes.png" alt="likes">
+                                    <p>37</p>
+                                </div>
+                            </div>
+                            <div class="open"><a href="">Читать полностью</a></div>
+                        </div>
+                    </div>
+                    <div id="pic">
+                        <img src="img/news photos/image (1).png" alt="">
+                    </div>
+                </div>
+
+                <div class="news-item">
+                    <div class="info">
+                        <div class="text">
+                            <h2>«Не время умирать» будет самым длинным фильмом бондианы</h2>
+                            <p>Стало известно, что хронометраж 25-го фильма об агенте британской разведки под кодовым номером 007 составит два часа сорок три минуты, сообщает Collider.
+                            </p>
+                        </div>
+                        <div class="action">
+                            <div class="discussion">
+                                <div id="comments"><img src="img/Discussion/comments.png" alt="comments">
+                                    <p>13</p>
+                                </div>
+                                <div id="likes"><img src="img/Discussion/likes.png" alt="likes">
+                                    <p>37</p>
+                                </div>
+                            </div>
+                            <div class="open"><a href="">Читать полностью</a></div>
+                        </div>
+                    </div>
+                    <div id="pic">
+                        <img src="img/news photos/image (2).png" alt="">
+                    </div>
+                </div>
+
+                <div class="news-item">
+                    <div class="info">
+                        <div class="text">
+                            <h2>Компания Apple диктует условия Голливуду
+                            </h2>
+                            <p>Оказывается, компания, производящая сверхпопулярные гаджеты, выдвигает кинематографистам ультиматум.
+                            </p>
+                        </div>
+                        <div class="action">
+                            <div class="discussion">
+                                <div id="comments"><img src="img/Discussion/comments.png" alt="comments">
+                                    <p>13</p>
+                                </div>
+                                <div id="likes"><img src="img/Discussion/likes.png" alt="likes">
+                                    <p>37</p>
+                                </div>
+                            </div>
+                            <div class="open"><a href="">Читать полностью</a></div>
+                        </div>
+                    </div>
+                    <div id="pic">
+                        <img src="img/news photos/image (3).png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="pages">
+                <a href="">1</a>
+                <a href="">2</a>
+                <a href="">3</a>
+                <a href="">4</a>
+                <a href="">5</a>
+                <a href="">6</a>
+                <a href="">7</a>
+                <a href="">8</a>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-top">
+                <div id="logo"><img src="img/logo.png" alt=""></div>
+                <div class="icons">
+                    <div>
+                        <p>Следите за нами:</p>
+                    </div>
+                    <input type="image" src="img/Icons/facebook-icon.png" alt="Facebook">
+                    <input type="image" src="img/Icons/twitter-icon.png" alt="Twitter">
+                    <input type="image" src="img/Icons/vk-icon.png" alt="VK">
+                    <input type="image" src="img/Icons/instagram-icon.png" alt="Instagram">
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div id="bordered-block">
+                    <p>
+                        © 2020 Полное или частичное использование материалов сайта разрешается при условии активной гиперссылки на www.somestuff.com
+                    </p>
+                </div>
+            </div>
+        </footer>
     </div>
-
-    <main>
-        <div id="title">
-            <p>Новости кино</p>
-        </div>
-        <div class="news">
-            <div class="news-item">
-                <div class="info">
-                    <div class="text">
-                        <h2>Том Харди рассматривается на роль Франкенштейна</h2>
-                        <p>Вдохновившись успехом «Человека-невидимки», студия Universal вновь заговорила о так называемой «Темной вселенной», концепции возвращения на экраны таких классических монстров, как Дракула, Мумия, Чудовище Франкенштейна и Невеста
-                            Франкенштейна.
-                        </p>
-                    </div>
-                    <div class="action">
-                        <div class="discussion">
-                            <div id="comments"><img src="img/Discussion/comments.png" alt="comments">
-                                <p>13</p>
-                            </div>
-                            <div id="likes"><img src="img/Discussion/likes.png" alt="likes">
-                                <p>37</p>
-                            </div>
-                        </div>
-                        <div class="open"><a href="">Читать полностью</a></div>
-                    </div>
-                </div>
-                <div id="pic">
-                    <img src="img/news photos/image (4).png" alt="">
-                </div>
-            </div>
-
-            <div class="news-item">
-                <div class="info">
-                    <div class="text">
-                        <h2>Бен Стиллер присоединился к франшизе «Форсаж»</h2>
-                        <p>Вот так неожиданная новость. Комик Бен Стиллер, если верить изданию Page Six, присоединился к команде Вина Дизеля, причем предстанет перед зрителями уже в девятом «Форсаже», до релиза которого осталось менее трех месяцев.
-                        </p>
-                    </div>
-                    <div class="action">
-                        <div class="discussion">
-                            <div id="comments"><img src="img/Discussion/comments.png" alt="comments">
-                                <p>13</p>
-                            </div>
-                            <div id="likes"><img src="img/Discussion/likes.png" alt="likes">
-                                <p>37</p>
-                            </div>
-                        </div>
-                        <div class="open"><a href="">Читать полностью</a></div>
-                    </div>
-                </div>
-                <div id="pic">
-                    <img src="img/news photos/image (5).png" alt="">
-                </div>
-            </div>
-
-            <div class="news-item">
-                <div class="info">
-                    <div class="text">
-                        <h2>Disney не заработает ожидаемых денег на прокате «Мулан»</h2>
-                        <p>Стало известно, что предстоящий игровой ремейк диснеевского мультфильма «Мулан» не выйдет в китайский прокат, передает Comic Book.
-                        </p>
-                    </div>
-                    <div class="action">
-                        <div class="discussion">
-                            <div id="comments"><img src="img/Discussion/comments.png" alt="comments">
-                                <p>13</p>
-                            </div>
-                            <div id="likes"><img src="img/Discussion/likes.png" alt="likes">
-                                <p>37</p>
-                            </div>
-                        </div>
-                        <div class="open"><a href="">Читать полностью</a></div>
-                    </div>
-                </div>
-                <div id="pic">
-                    <img src="img/news photos/image (1).png" alt="">
-                </div>
-            </div>
-
-            <div class="news-item">
-                <div class="info">
-                    <div class="text">
-                        <h2>«Не время умирать» будет самым длинным фильмом бондианы</h2>
-                        <p>Стало известно, что хронометраж 25-го фильма об агенте британской разведки под кодовым номером 007 составит два часа сорок три минуты, сообщает Collider.
-                        </p>
-                    </div>
-                    <div class="action">
-                        <div class="discussion">
-                            <div id="comments"><img src="img/Discussion/comments.png" alt="comments">
-                                <p>13</p>
-                            </div>
-                            <div id="likes"><img src="img/Discussion/likes.png" alt="likes">
-                                <p>37</p>
-                            </div>
-                        </div>
-                        <div class="open"><a href="">Читать полностью</a></div>
-                    </div>
-                </div>
-                <div id="pic">
-                    <img src="img/news photos/image (2).png" alt="">
-                </div>
-            </div>
-
-            <div class="news-item">
-                <div class="info">
-                    <div class="text">
-                        <h2>Компания Apple диктует условия Голливуду
-                        </h2>
-                        <p>Оказывается, компания, производящая сверхпопулярные гаджеты, выдвигает кинематографистам ультиматум.
-                        </p>
-                    </div>
-                    <div class="action">
-                        <div class="discussion">
-                            <div id="comments"><img src="img/Discussion/comments.png" alt="comments">
-                                <p>13</p>
-                            </div>
-                            <div id="likes"><img src="img/Discussion/likes.png" alt="likes">
-                                <p>37</p>
-                            </div>
-                        </div>
-                        <div class="open"><a href="">Читать полностью</a></div>
-                    </div>
-                </div>
-                <div id="pic">
-                    <img src="img/news photos/image (3).png" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="pages">
-            <a href="">1</a>
-            <a href="">2</a>
-            <a href="">3</a>
-            <a href="">4</a>
-            <a href="">5</a>
-            <a href="">6</a>
-            <a href="">7</a>
-            <a href="">8</a>
-        </div>
-    </main>
-
     <script src="scripts/slider.js"></script>
 </body>
 
