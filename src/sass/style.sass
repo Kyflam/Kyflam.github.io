@@ -4,14 +4,14 @@ body
     
 #background_image
     width: 100%
-    height: 100%
-    object-fit: cover
+    height: auto
+    object-fit: contain cover
+    z-index: -1
+    position: absolute
 
 #foreground
-    position: absolute
-    top: 0
-    left: 50%
-    transform: translateX(-50%)
+    margin: 0 auto
+    width: 1110px
     display: flex
     justify-content: center
     flex-direction: column
@@ -19,6 +19,7 @@ body
 .intro
     width: 1110px
     height: 88px
+    padding-left: 10px
     display: flex
     flex-direction: row
     align-items: center
@@ -51,7 +52,7 @@ $gray: #ffffff
 
 .form__field 
   font-family: inherit
-  width: 100%
+  width: 90%
   margin: 0 10px 0 10px
   border: 0
   border-bottom: 2px solid $gray
@@ -282,3 +283,33 @@ footer
         
     to 
         opacity: 1
+
+  
+@media screen and ( max-width:  1110px)
+    #background_image
+        display: none
+
+    main
+        height: auto
+
+    .news-item
+        flex-direction: column
+
+    .text
+        h2
+            font-size: 60px !important
+        p 
+            font-size: 40px !important
+
+    #pic
+        display: none !important
+
+    .action
+        .open
+            font-size: 35px
+
+        .discussion
+            margin-top: 20px
+            width: 150px !important
+            img
+                width: 60px
