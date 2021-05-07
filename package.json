@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/Kyflam/Kyflam.github.io#readme",
   "dependencies": {
-    "underscore": "^1.9.2"
+    "underscore": "^1.12.1"
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",
